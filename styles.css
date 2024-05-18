@@ -1,0 +1,170 @@
+:root{
+    font-size: 1em;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color:hsl(30, 54%, 90%)
+}
+
+/* Fonts */
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Container */
+.container{
+    margin: 50px;
+}
+
+li::marker{
+    list-style-position: outside;
+    color: hsl(14, 45%, 36%);
+    padding-left: 2em;
+}
+
+/* Main Page */
+.main-page, .main-page img{
+    max-width: 650px;
+}
+
+.main-page {
+    border: 1em solid rgb(255, 255, 255);
+    border-radius: 1em; 
+    background-color: white;
+    margin: 0 auto;
+    padding: 0.75em;
+}
+
+.main-page img{
+    border-radius: 1em;
+}
+
+.main-page h1{
+    font-family: "Young Serif";
+}
+
+.h1-text{
+    font-family: "outfit";
+}
+
+/* Preparation Time Section */
+.prep-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    font-family: "outfit";
+    border-radius: 1em;
+}
+
+.prep-time h3, li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.prep-time b, .inst b{
+    color:hsl(30, 10%, 34%)
+}
+
+/* Ingredients Section */
+.ingr, .inst, .nutr{
+    font-family: "outfit";
+    font-weight: 300;
+}
+
+.ingr h2, .inst h2, .nutr h2{
+    font-family: "Young Serif";
+    color: hsl(14, 45%, 36%);
+}
+
+.ingr ul li{
+    margin-top: 0.8em;
+}
+
+/* Instructions Section */
+.inst ol li{
+    margin-top: 0.8em;
+}
+
+/* Nutrition Section */
+.nutrition-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nutrition-list li{
+    display: flex;
+    justify-content:space-between;
+    pad: 10px 0;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    margin-bottom: 1em;
+}
+
+.nutrition-list li:last-child{
+    border-bottom: none;
+}
+
+.nutrient-name {
+    text-align: left;
+}
+
+.nutrient-value {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+    float: left;;
+}
+  
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+    .container {
+      margin: 20px;
+    }
+  
+    .main-page {
+      padding: 0.5em;
+    }
+  
+    .main-page h1 {
+      font-size: 1.5em;
+    }
+  
+    .h1-text {
+      font-size: 0.9em;
+    }
+  
+    .prep-time,
+    .ingr,
+    .inst,
+    .nutr {
+      padding: 8px; 
+      margin-bottom: 15px; 
+    }
+  
+    .nutrition-list li {
+      flex-direction: column; 
+      align-items: flex-start; 
+      border-bottom: none; 
+      margin-bottom: 10px; 
+    }
+  
+    .nutrition-list .nutrient-name {
+      font-size: 0.9em; 
+    }
+  
+    .nutrition-list .nutrient-value {
+      text-align: left;
+      font-size: 0.9em; 
+      font-weight: 400; 
+    }
+  }
+  
